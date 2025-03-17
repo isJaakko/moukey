@@ -1,14 +1,13 @@
-import { mouse, left, right, up, down, Button, straightTo, centerOf, screen, imageResource } from '@nut-tree/nut-js';
-
-const wait = timout => new Promise(resolve => setTimeout(() => resolve(), timout))
+import records from './records/login_qq.json' assert { type: 'json' };
+import { translateAction } from './translate/index.js';
 
 async function main() {
-    await wait(1000);
-    await mouse.move(right(500));
-    await mouse.move(down(500));
-    await mouse.move(left(500));
-    await mouse.move(up(500));
-    await mouse.doubleClick(Button.LEFT);
+    const { actions } = records;
+
+    for (let index = 0; index < actions.length; index++) {
+        const action = actions[index];
+        await translateAction(action, index);
+    }
 }
 
 main();

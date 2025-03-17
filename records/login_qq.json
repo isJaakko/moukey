@@ -1,0 +1,211 @@
+{
+    "actions": [
+        {
+            "dis": false,
+            "ex": 0,
+            "mark": "",
+            "move": false,
+            "spd": 20,
+            "trk": true,
+            "type": 4,
+            "x": 117,
+            "y": 6150
+        },
+        {
+            "dis": false,
+            "mark": "",
+            "state": 1,
+            "type": 3,
+            "vk": 1
+        },
+        {
+            "dis": false,
+            "ex": 90,
+            "mark": "",
+            "ms": 90,
+            "type": 2
+        },
+        {
+            "dis": false,
+            "ex": 0,
+            "mark": "",
+            "move": false,
+            "spd": 20,
+            "trk": true,
+            "type": 4,
+            "x": 117,
+            "y": 6150
+        },
+        {
+            "dis": false,
+            "mark": "",
+            "state": 0,
+            "type": 3,
+            "vk": 1
+        },
+        {
+            "dis": false,
+            "ex": 75,
+            "mark": "",
+            "ms": 75,
+            "type": 2
+        },
+        {
+            "dis": false,
+            "ex": 0,
+            "mark": "",
+            "move": false,
+            "spd": 20,
+            "trk": true,
+            "type": 4,
+            "x": 117,
+            "y": 6150
+        },
+        {
+            "dis": false,
+            "mark": "",
+            "state": 1,
+            "type": 3,
+            "vk": 1
+        },
+        {
+            "dis": false,
+            "ex": 97,
+            "mark": "",
+            "ms": 97,
+            "type": 2
+        },
+        {
+            "dis": false,
+            "ex": 0,
+            "mark": "",
+            "move": false,
+            "spd": 20,
+            "trk": true,
+            "type": 4,
+            "x": 117,
+            "y": 6150
+        },
+        {
+            "dis": false,
+            "mark": "",
+            "state": 0,
+            "type": 3,
+            "vk": 1
+        },
+        {
+            "dis": false,
+            "ex": 7740,
+            "mark": "",
+            "ms": 7740,
+            "type": 2
+        },
+        {
+            "dis": false,
+            "ex": 0,
+            "mark": "",
+            "move": false,
+            "spd": 20,
+            "trk": true,
+            "type": 4,
+            "x": 5123,
+            "y": 5127
+        },
+        {
+            "dis": false,
+            "mark": "",
+            "state": 1,
+            "type": 3,
+            "vk": 1
+        },
+        {
+            "dis": false,
+            "ex": 98,
+            "mark": "",
+            "ms": 98,
+            "type": 2
+        },
+        {
+            "dis": false,
+            "ex": 0,
+            "mark": "",
+            "move": false,
+            "spd": 20,
+            "trk": true,
+            "type": 4,
+            "x": 5123,
+            "y": 5127
+        },
+        {
+            "dis": false,
+            "mark": "",
+            "state": 0,
+            "type": 3,
+            "vk": 1
+        },
+        {
+            "dis": false,
+            "ex": 2460,
+            "mark": "",
+            "ms": 2460,
+            "type": 2
+        },
+        {
+            "dis": false,
+            "ex": 0,
+            "mark": "",
+            "move": false,
+            "spd": 20,
+            "trk": true,
+            "type": 4,
+            "x": 5053,
+            "y": 5775
+        },
+        {
+            "dis": false,
+            "mark": "",
+            "state": 1,
+            "type": 3,
+            "vk": 1
+        },
+        {
+            "dis": false,
+            "ex": 90,
+            "mark": "",
+            "ms": 90,
+            "type": 2
+        },
+        {
+            "dis": false,
+            "ex": 0,
+            "mark": "",
+            "move": false,
+            "spd": 20,
+            "trk": true,
+            "type": 4,
+            "x": 5053,
+            "y": 5775
+        },
+        {
+            "dis": false,
+            "mark": "",
+            "state": 0,
+            "type": 3,
+            "vk": 1
+        }
+    ],
+    "actionsEnding": [
+    ],
+    "count": 1,
+    "curBlock": false,
+    "document_charset": "UTF8",
+    "key": 0,
+    "keyBlock": false,
+    "mode": 1,
+    "state": false,
+    "type": "QuickInputMacro",
+    "wndChild": false,
+    "wndClass": "",
+    "wndName": "",
+    "wndState": false
+}
