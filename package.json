@@ -1,17 +1,27 @@
 {
-  "name": "wechat-reader-handler",
+  "name": "moukey",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type": "module",
+  "type": "commonjs",
+  "bin": "./index.js",
   "scripts": {
-    "start": "node index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "npm run transpile && node dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pkg . --out-path bin",
+    "transpile": "babel src --out-dir dist --presets=@babel/preset-env && cp -r src/records dist/ && cp package.json dist/",
+    "pkg-build": "npm run transpile && pkg dist --targets node18-linux-x64,node18-macos-x64,node18-win-x64 --out-path bin"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@nut-tree/nut-js": "^3.1.2"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1",
+    "@babel/cli": "^7.22.10",
+    "@babel/core": "^7.22.10",
+    "@babel/preset-env": "^7.22.10"
   }
 }
