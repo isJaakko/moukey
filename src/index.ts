@@ -1,5 +1,5 @@
 import records from './records/start_game.json';
-import { translateAction, wait } from './translate/index.js';
+import { translateAction, wait } from './translate/index';
 
 async function main() {
     const { actions } = records;

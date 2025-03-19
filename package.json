@@ -6,9 +6,9 @@
   "type": "commonjs",
   "bin": "./index.js",
   "scripts": {
-    "dev": "npm run transpile && node dist/index.js",
+    "dev": "tsc && node dist/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "transpile": "babel src --out-dir dist --presets=@babel/preset-env && cp -r src/records dist/ && cp package.json dist/",
+    "transpile": "babel src --out-dir dist --config-file .babelrc",
     "build": "npm run transpile && pkg dist --targets node18-linux-x64,node18-macos-x64,node18-win-x64 --out-path bin"
   },
   "keywords": [],
@@ -19,8 +19,6 @@
   },
   "devDependencies": {
     "pkg": "^5.8.1",
-    "@babel/cli": "^7.22.10",
-    "@babel/core": "^7.22.10",
-    "@babel/preset-env": "^7.22.10"
+    "typescript": "^5.8.2"
   }
 }
