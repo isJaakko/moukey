@@ -1,13 +1,23 @@
 import { mouse, left, right, up, down, Button, straightTo, centerOf, screen, imageResource } from '@nut-tree/nut-js';
-import { OPT_TYPE, BUTTON_STATE } from './constants.js'
+import { OPT_TYPE, BUTTON_STATE } from './constants.js';
 
 export const wait = timout => new Promise(resolve => setTimeout(() => resolve(), timout))
+
+async function convertCoordinate(x, y) {
+    const screenWidth = await screen.width();
+    const screenHeight = await screen.height();
+    return {
+        x: Math.round((x / 10000) * screenWidth),
+        y: Math.round((y / 10000) * screenHeight)
+    };
+}
 
 export async function translateAction(action, index) {
     const { type, x, y, spd, state, ex } = action;
     if (type === OPT_TYPE.move) {
-        console.log(`${index + 1} 位置 ${x}-${y} 轨迹： ${spd}`);
-        await mouse.move(straightTo({ x, y }));
+        const { x: convertedX, y: convertedY } = await convertCoordinate(x, y);
+        console.log(`${index + 1} 位置 ${convertedX}-${convertedY} 轨迹： ${spd}`);
+        await mouse.move(straightTo({ x: convertedX, y: convertedY }), 'easeOutQuad');
     }
 
     if (type === OPT_TYPE.click) {
